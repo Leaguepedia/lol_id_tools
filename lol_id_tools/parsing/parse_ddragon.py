@@ -64,7 +64,7 @@ def parse_runes(full_patch: str, locale: str = "en_US") -> Dict[int, str]:
     cdragon_data = requests.get(url).json()
 
     for rune in cdragon_data:
-        if 5000 < rune["id"] < 5010:
+        if 5000 < rune["id"] < 5014:
             result[rune["id"]] = rune["name"]
 
     return result

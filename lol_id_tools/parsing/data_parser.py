@@ -80,5 +80,5 @@ def parse_cdragon_runes(local_data, locale):
 
     for rune in cdragon_data:
         # TODO Get perks only in a cleaner way
-        if 5000 < rune["id"] < 5010:
+        if 5000 < rune["id"] < 5014:
             local_data[locale][rune["id"]]["rune"] = rune["name"]
