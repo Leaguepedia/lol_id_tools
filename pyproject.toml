@@ -8,14 +8,13 @@ include = ["*.json"]
 
 
 [tool.poetry.dependencies]
-python = "^3.8"
-requests = "^2.27.1"
-rapidfuzz = "^2.0.2"
-pydantic = "^1.9.0"
+python = "^3.10"
+requests = "^2.32.0"
+rapidfuzz = "^3.0.0"
+pydantic = "^2.0.0"
 
-[tool.poetry.dev-dependencies]
-pytest = "^7.0.1"
-black = {version = "^22.3.0", allow-prereleases = true}
+[tool.poetry.group.dev.dependencies]
+pytest = "^9.0.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
